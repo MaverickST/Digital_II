@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Practica_1
-Fri Aug 25 22:36:33 2023
+Fri Aug 25 23:08:45 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -16,9 +16,12 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: Top-level Entity: |main
  10. Parameter Settings for User Entity Instance: cntdiv_n:cntDiv
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "deco7seg_hexa:deco0"
+ 12. Port Connectivity Checks: "deco7seg_hexa:deco1"
+ 13. Port Connectivity Checks: "cntdiv_n:cntDiv"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +48,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 25 22:36:33 2023          ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 25 23:08:45 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; Practica_1                                     ;
 ; Top-level Entity Name              ; main                                           ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 50                                             ;
-;     Total combinational functions  ; 50                                             ;
-;     Dedicated logic registers      ; 26                                             ;
-; Total registers                    ; 26                                             ;
-; Total pins                         ; 19                                             ;
+; Total logic elements               ; 0                                              ;
+;     Total combinational functions  ; 0                                              ;
+;     Dedicated logic registers      ; 0                                              ;
+; Total registers                    ; 0                                              ;
+; Total pins                         ; 18                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -159,64 +162,62 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 8           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-; cntdiv_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv ;         ;
-; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                       ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; deco7seg_hexa.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/deco7seg_hexa.sv ;         ;
+; cntdiv_n.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv      ;         ;
+; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv          ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 50        ;
-;                                             ;           ;
-; Total combinational functions               ; 50        ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 11        ;
-;     -- 3 input functions                    ; 2         ;
-;     -- <=2 input functions                  ; 37        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 26        ;
-;     -- arithmetic mode                      ; 24        ;
-;                                             ;           ;
-; Total registers                             ; 26        ;
-;     -- Dedicated logic registers            ; 26        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 19        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 26        ;
-; Total fan-out                               ; 221       ;
-; Average fan-out                             ; 1.94      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 18    ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 18    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name   ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
-; |main                      ; 50 (0)              ; 26 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 19   ; 0            ; 0          ; |main                 ; main        ; work         ;
-;    |cntdiv_n:cntDiv|       ; 50 (50)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |main|cntdiv_n:cntDiv ; cntdiv_n    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |main                      ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 18   ; 0            ; 0          ; |main               ; main        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -225,10 +226,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 26    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -256,26 +257,45 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "deco7seg_hexa:deco0"                                                                                                                     ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; D    ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "D[3..1]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "deco7seg_hexa:deco1"                                                                                                                     ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                   ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+; D    ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "D[3..1]" will be connected to GND. ;
++------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cntdiv_n:cntDiv"                                                                      ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; clkdiv ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_ff         ; 26                          ;
-;     CLR               ; 26                          ;
-; cycloneiii_lcell_comb ; 51                          ;
-;     arith             ; 24                          ;
-;         2 data inputs ; 24                          ;
-;     normal            ; 27                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 11                          ;
+; boundary_port         ; 18                          ;
+; cycloneiii_lcell_comb ; 2                           ;
+;     normal            ; 2                           ;
+;         0 data inputs ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.73                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -294,7 +314,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Aug 25 22:36:20 2023
+    Info: Processing started: Fri Aug 25 23:08:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Practica_1 -c Practica_1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -304,45 +324,53 @@ Info (12021): Found 1 design units, including 1 entities, in source file cntdiv_
     Info (12023): Found entity 1: cntdiv_n File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
     Info (12023): Found entity 1: main File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 3
+Warning (10236): Verilog HDL Implicit Net warning at main.sv(77): created implicit net for "uniSeg" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 77
 Info (12127): Elaborating entity "main" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at main.sv(17): object "numSeg" assigned a value but never read File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 17
-Warning (10230): Verilog HDL assignment warning at main.sv(52): truncated value with size 32 to match size of target (1) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 52
-Warning (10230): Verilog HDL assignment warning at main.sv(56): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 56
-Warning (10230): Verilog HDL assignment warning at main.sv(59): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 59
-Warning (10230): Verilog HDL assignment warning at main.sv(65): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 65
-Warning (10230): Verilog HDL assignment warning at main.sv(68): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 68
-Warning (10034): Output port "seg1" at main.sv(9) has no driver File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-Warning (10034): Output port "seg0" at main.sv(9) has no driver File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:cntDiv" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 41
+Warning (10036): Verilog HDL or VHDL warning at main.sv(75): object "decSeg" assigned a value but never read File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 75
+Warning (10036): Verilog HDL or VHDL warning at main.sv(76): object "unidSeg" assigned a value but never read File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 76
+Warning (10230): Verilog HDL assignment warning at main.sv(50): truncated value with size 32 to match size of target (1) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at main.sv(54): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 54
+Warning (10230): Verilog HDL assignment warning at main.sv(57): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at main.sv(63): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 63
+Warning (10230): Verilog HDL assignment warning at main.sv(66): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 66
+Warning (10230): Verilog HDL assignment warning at main.sv(85): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 85
+Warning (10230): Verilog HDL assignment warning at main.sv(86): truncated value with size 32 to match size of target (4) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 86
+Info (12128): Elaborating entity "cntdiv_n" for hierarchy "cntdiv_n:cntDiv" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 39
 Warning (10230): Verilog HDL assignment warning at cntdiv_n.sv(20): truncated value with size 32 to match size of target (25) File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv Line: 20
+Info (12128): Elaborating entity "deco7seg_hexa" for hierarchy "deco7seg_hexa:deco1" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 77
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uniSeg" is missing source, defaulting to GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 77
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "uniSeg" is missing source, defaulting to GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 77
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "seg1[0]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[1]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[2]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[3]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[4]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[5]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg1[6]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[0]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[1]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[2]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[3]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[4]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[5]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-    Warning (13410): Pin "seg0[6]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 9
-Info (286030): Timing-Driven Synthesis is running
+    Warning (13410): Pin "seg1[0]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[1]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[2]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[3]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[4]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[5]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg1[6]" is stuck at VCC File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[0]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[1]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[2]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[3]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[4]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[5]" is stuck at GND File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
+    Warning (13410): Pin "seg0[6]" is stuck at VCC File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 8
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 7
+    Warning (15610): No output dependent on input pin "nreset" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 7
     Warning (15610): No output dependent on input pin "timeS" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 7
     Warning (15610): No output dependent on input pin "up" File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv Line: 7
-Info (21057): Implemented 69 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
-    Info (21059): Implemented 15 output pins
-    Info (21061): Implemented 50 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Fri Aug 25 22:36:33 2023
+    Info (21059): Implemented 14 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
+    Info: Peak virtual memory: 4744 megabytes
+    Info: Processing ended: Fri Aug 25 23:08:45 2023
     Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:32
 

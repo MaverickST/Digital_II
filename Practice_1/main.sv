@@ -1,17 +1,14 @@
 /* MODULO PRINCIPAL*/
 
 module main #(fpga_f = 50_000_000, n = 4) 
-	(clk, nreset, timeS, up, clk_500ms, seg1, seg0);
+	(clk, nreset, timeS, up, seg1, seg0);
 	
 	/* Entradas y salidas*/
 	input logic clk, nreset, timeS, up; 
-	output logic clk_500ms;
 	output logic [6:0] seg1, seg0;
-	
 	
 	logic reset; 
 	assign reset = ~nreset;
-	
 	
 	integer i; /* Contador para el for */
 	logic [n-1:0] numSeg = 0; /* En donde se guardará el numero a mostrar */
@@ -38,6 +35,7 @@ module main #(fpga_f = 50_000_000, n = 4)
 	end
 	
 	/* Generelación de las dos señales de reloj*/
+	logic clk_500ms;
 	cntdiv_n #(fpga_f/2) cntDiv (clk, reset, clk_500ms);
 	logic chooseClk = 0; // Para decidir si el clk de 1s/1Hz o el de 0.5s/2Hz
 	
@@ -71,5 +69,41 @@ module main #(fpga_f = 50_000_000, n = 4)
 			end
 		end
 	end
+	
+	/* Segmentos */
+	
+	logic [n-1:0] decSeg; /* Decenas */
+	logic [n-1:0] unidSeg; /* Unidades */
+	deco7seg_hexa deco1(uniSeg, seg1);
+	deco7seg_hexa deco0(uniSeg, seg0);
+	
+	always_comb begin
+		if (numSeg/10 === 0) begin /* No hay decenas */
+			decSeg = 0;
+			unidSeg = numSeg;
+		end else begin
+			decSeg = numSeg/10;
+			unidSeg = numSeg%10;
+		end
+	end
+	
+endmodule
+
+
+module tb_main();
+	// Parámetros locales
+	localparam CLK_P = 20ns; 
+	localparam 
+	
+	// Señales internas
+	logic clk, reset, timeS, up;
+	logic [6:0] seg1, seg0;
+	
+	// Instanciacion del circuito
+	
+	
+	
+	
+	
 	
 endmodule
