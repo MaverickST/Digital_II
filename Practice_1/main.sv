@@ -89,6 +89,7 @@ module main #(fpga_f = 50_000_000, n = 4)
 	
 endmodule
 
+/* MODULO DEL TESTBENCH */
 
 module tb_main();
 	// Parámetros locales
