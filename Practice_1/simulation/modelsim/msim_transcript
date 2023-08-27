@@ -633,3 +633,5 @@ run -all
 # ** Note: $stop    : C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv(117)
 #    Time: 5440 ns  Iteration: 0  Instance: /tb_main
 # Break in Module tb_main at C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv line 117
+# End time: 22:44:54 on Aug 26,2023, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 0

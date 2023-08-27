@@ -107,7 +107,7 @@ module tb_main();
 		reset = 0;
 		timeS = 0;
 		up = 0;
-		#(CLK_P*16); /* Este bloque define el funcionamiento */
+		#(CLK_P*8); /* Este bloque define el funcionamiento */
 		reset = 1;
 		timeS = 1;
 		up = 1;
