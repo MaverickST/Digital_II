@@ -74,8 +74,8 @@ module main #(fpga_f = 50_000_000, n = 4)
 	
 	logic [n-1:0] decSeg; /* Decenas */
 	logic [n-1:0] unidSeg; /* Unidades */
-	deco7seg_hexa deco1(uniSeg, seg1);
-	deco7seg_hexa deco0(uniSeg, seg0);
+	deco7seg_hexa deco1(decSeg, seg1);
+	deco7seg_hexa deco0(unidSeg, seg0);
 	
 	always_comb begin
 		if (numSeg/10 === 0) begin /* No hay decenas */
@@ -93,17 +93,30 @@ endmodule
 module tb_main();
 	// Parámetros locales
 	localparam CLK_P = 20ns; 
-	localparam 
+	localparam FPGA_F = 8;
 	
 	// Señales internas
 	logic clk, reset, timeS, up;
 	logic [6:0] seg1, seg0;
 	
 	// Instanciacion del circuito
+	main #(FPGA_F, 4) mainSec (clk, reset, timeS, up, seg1, seg0);
 	
+	initial begin
+		clk = 0;
+		reset = 0;
+		timeS = 1;
+		up = 1;
+		#(CLK_P*256);
+		reset = 1;
+		timeS = 0;
+		up = 0;
+		#(CLK_P*2000);
+		
+		$stop;
+		
+	end
 	
-	
-	
-	
+	always #(CLK_P/2) clk = ~clk;
 	
 endmodule
