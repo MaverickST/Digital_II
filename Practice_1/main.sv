@@ -105,13 +105,13 @@ module tb_main();
 	initial begin
 		clk = 0;
 		reset = 0;
+		timeS = 0;
+		up = 0;
+		#(CLK_P*16); /* Este bloque define el funcionamiento */
+		reset = 1;
 		timeS = 1;
 		up = 1;
 		#(CLK_P*256);
-		reset = 1;
-		timeS = 0;
-		up = 0;
-		#(CLK_P*2000);
 		
 		$stop;
 		
