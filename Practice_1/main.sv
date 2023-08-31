@@ -10,27 +10,29 @@ module main #(fpga_f = 50_000_000, n = 4)
 	logic reset; 
 	assign reset = ~nreset;
 	
-	integer i; /* Contador para el for */
+	integer i = 0; /* Contador para el case */
 	logic [n-1:0] numSeg = 0; /* En donde se guardará el numero a mostrar */
 	logic [n-1:0] posNum = 0; /* Posición del numero a mostrar */
 	
 	/* Creación vector de la secuencia */
 	logic [n - 1:0] sec [7:0];
 	
-	always_comb begin
-		for (i = 0; i < 8; i = i + 1) begin
-			case (i)
-				0: sec[i] = 5;
-				1: sec[i] = 10;
-				2: sec[i] = 15;
-				3: sec[i] = 4;
-				4: sec[i] = 9;
-				5: sec[i] = 14;
-				6: sec[i] = 3;
-				7: sec[i] = 8;
-				default: sec[i] = 0;
-			endcase
-		end
+	always_ff @(posedge clk) begin
+		i <= i + 1;
+		case (i)
+			0: sec[i] <= 5;
+			1: sec[i] <= 10;
+			2: sec[i] <= 15;
+			3: sec[i] <= 4;
+			4: sec[i] <= 9;
+			5: sec[i] <= 14;
+			6: sec[i] <= 3;
+			7: begin 
+				sec[i] <= 8; 
+				i <= 0;
+			end 
+			default: sec[i] <= 5;
+		endcase
 		
 	end
 	
@@ -108,11 +110,15 @@ module tb_main();
 		reset = 0;
 		timeS = 0;
 		up = 0;
-		#(CLK_P*8); /* Este bloque define el funcionamiento */
+		#(CLK_P); /* Este bloque define el funcionamiento */
 		reset = 1;
 		timeS = 1;
 		up = 1;
-		#(CLK_P*256);
+		#(CLK_P*10); /* Este bloque define el funcionamiento */
+		reset = 1;
+		timeS = 0;
+		up = 0;
+		#(CLK_P*10);
 		
 		$stop;
 		
