@@ -33,7 +33,6 @@ module main #(fpga_f = 50_000_000, n = 4)
 			end 
 			default: sec[i] <= 5;
 		endcase
-		
 	end
 	
 	/* Generelación de las dos señales de reloj*/
@@ -110,15 +109,12 @@ module tb_main();
 		reset = 0;
 		timeS = 0;
 		up = 0;
-		#(CLK_P); /* Este bloque define el funcionamiento */
-		reset = 1;
-		timeS = 1;
-		up = 1;
-		#(CLK_P*10); /* Este bloque define el funcionamiento */
+		#(CLK_P*1);
+		clk = 1;
 		reset = 1;
 		timeS = 0;
 		up = 0;
-		#(CLK_P*10);
+		#(CLK_P*512);
 		
 		$stop;
 		

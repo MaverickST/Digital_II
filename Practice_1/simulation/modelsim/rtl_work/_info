@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/simulation/modelsim
 vcntdiv_n
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1693444290
+Z2 !s110 1693454737
 !i10b 1
 !s100 X`MHz1Bi6DcAB2^7YQ^N[3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1693444290.000000
+Z7 !s108 1693454737.000000
 !s107 C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1|C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/cntdiv_n.sv|
 !i113 1
@@ -65,17 +65,17 @@ vmain
 R1
 R2
 !i10b 1
-!s100 h;a>LBXkfX36am=O4jcZ52
+!s100 85VoS6gh_>meVfQG5R:zC3
 R3
-IY8mABE9EH8CW0[0;4Z`L42
+ImZIUibnRYG]LOJPA3:6dm3
 R4
 S1
 R0
-Z11 w1693444200
+Z11 w1693454677
 Z12 8C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv
 Z13 FC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practice_1/main.sv
 !i122 2
-L0 3 90
+L0 3 89
 R6
 r1
 !s85 0
@@ -91,9 +91,9 @@ vtb_main
 R1
 R2
 !i10b 1
-!s100 0K]z3mK5hi?SdIhfk3IT33
+!s100 cf`Jg>Zf2AaB_LfmKOC=51
 R3
-IkQNJVRhELI?TT`jUb0Mln3
+IjIDcj4WGAmFoN5hab9eHZ0
 R4
 S1
 R0
@@ -101,7 +101,7 @@ R11
 R12
 R13
 !i122 2
-L0 96 34
+L0 95 31
 R6
 r1
 !s85 0
