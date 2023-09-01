@@ -58,7 +58,7 @@ module main #(fpga_f = 50_000_000, n = 4)
 					posNum <= posNum - 1;
 					numSeg <= sec[posNum];
 				end
-				
+			// Se hace el cambio con la de 1s pero se verifica que haya pasado el tiempo suficiente.
 			end else if (~chooseClk) begin
 				if (up) begin
 					posNum <= posNum + 1;

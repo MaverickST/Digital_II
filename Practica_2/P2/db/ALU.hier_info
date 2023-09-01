@@ -1,0 +1,54 @@
+|main
+clk => clk.IN1
+nreset => reset.IN1
+A[0] => ~NO_FANOUT~
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+A[4] => ~NO_FANOUT~
+B[0] => ~NO_FANOUT~
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+B[3] => ~NO_FANOUT~
+B[4] => ~NO_FANOUT~
+nOperSel => OperSel.IN1
+flags[0] << <GND>
+flags[1] << <GND>
+flags[2] << <GND>
+flags[3] << <GND>
+curretOp[0] << <GND>
+curretOp[1] << <GND>
+curretOp[2] << <GND>
+curretOp[3] << <GND>
+segMinus2[0] << <GND>
+segMinus2[1] << <GND>
+segMinus2[2] << <GND>
+segMinus2[3] << <GND>
+segMinus2[4] << <GND>
+segMinus2[5] << <GND>
+segMinus2[6] << <GND>
+segTens1[0] << <GND>
+segTens1[1] << <GND>
+segTens1[2] << <GND>
+segTens1[3] << <GND>
+segTens1[4] << <GND>
+segTens1[5] << <GND>
+segTens1[6] << <GND>
+segUnits0[0] << <GND>
+segUnits0[1] << <GND>
+segUnits0[2] << <GND>
+segUnits0[3] << <GND>
+segUnits0[4] << <GND>
+segUnits0[5] << <GND>
+segUnits0[6] << <GND>
+
+
+|main|pulse:genPulse
+d => q1.DATAIN
+clk => q2.CLK
+clk => q1.CLK
+reset => q2.ACLR
+reset => q1.ACLR
+pulse <= pulse.DB_MAX_OUTPUT_PORT_TYPE
+
+
