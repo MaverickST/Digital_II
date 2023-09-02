@@ -2,7 +2,148 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "flags[0]",
+					"strict" : false
+				},
+				{
+					"name" : "flags[1]",
+					"strict" : false
+				},
+				{
+					"name" : "flags[2]",
+					"strict" : false
+				},
+				{
+					"name" : "flags[3]",
+					"strict" : false
+				},
+				{
+					"name" : "currentOp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "currentOp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "currentOp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "currentOp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segMinus2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segTens1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segUnits0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "nOperSel",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nreset",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

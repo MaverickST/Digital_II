@@ -1,0 +1,141 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/simulation/modelsim
+valu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1693619969
+!i10b 1
+!s100 A;kD=S20zngegkCK758bf2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IP3OlIFFb]ZCM_ia:EU2m<1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1693612482
+8C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv
+FC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv
+!i122 0
+L0 1 52
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1693619969.000000
+!s107 C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2|C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2}
+Z9 tCvgOpt 0
+vdeco7seg_hexa
+R1
+!s110 1693619970
+!i10b 1
+!s100 6LJALf@ifKmh[GScOA?P60
+R3
+IiN3]949AnL8RL;BLJYUI^3
+R4
+S1
+R0
+w1693270530
+8C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv
+FC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv
+!i122 3
+L0 1 28
+R5
+r1
+!s85 0
+31
+!s108 1693619970.000000
+!s107 C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2|C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+R2
+!i10b 1
+!s100 HFX2QzacMFTXXFbbXdVlE3
+R3
+I:e:^SdJ97AY=5>gdZlNm11
+R4
+S1
+R0
+Z10 w1693619896
+Z11 8C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv
+Z12 FC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv
+!i122 1
+L0 1 64
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv|
+Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2|C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv|
+!i113 1
+R7
+R8
+R9
+vpulse
+R1
+R2
+!i10b 1
+!s100 j>z`]F4i;B3jQ9[V@gDAC1
+R3
+IB409WEJ`cZLZjjF3NYL2i3
+R4
+S1
+R0
+w1693315132
+8C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv
+FC:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv
+!i122 2
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2|C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv|
+!i113 1
+R7
+R8
+R9
+vtb_main
+R1
+R2
+!i10b 1
+!s100 Sg=a@fIHHhTHVcJ49ECQC1
+R3
+IGa3:I0Ro49KFLhPWTXkhG0
+R4
+S1
+R0
+R10
+R11
+R12
+!i122 1
+L0 66 36
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!i113 1
+R7
+R8
+R9

@@ -1,0 +1,115 @@
+|main
+clk => clk.IN1
+nreset => reset.IN1
+timeS => posNum.OUTPUTSELECT
+timeS => posNum.OUTPUTSELECT
+timeS => posNum.OUTPUTSELECT
+timeS => posNum.OUTPUTSELECT
+timeS => numSeg.OUTPUTSELECT
+timeS => numSeg.OUTPUTSELECT
+timeS => numSeg.OUTPUTSELECT
+timeS => numSeg.OUTPUTSELECT
+up => posNum.OUTPUTSELECT
+up => posNum.OUTPUTSELECT
+up => posNum.OUTPUTSELECT
+up => posNum.OUTPUTSELECT
+seg1[0] <= deco7seg_hexa:deco1.port1
+seg1[1] <= deco7seg_hexa:deco1.port1
+seg1[2] <= deco7seg_hexa:deco1.port1
+seg1[3] <= deco7seg_hexa:deco1.port1
+seg1[4] <= deco7seg_hexa:deco1.port1
+seg1[5] <= deco7seg_hexa:deco1.port1
+seg1[6] <= deco7seg_hexa:deco1.port1
+seg0[0] <= deco7seg_hexa:deco0.port1
+seg0[1] <= deco7seg_hexa:deco0.port1
+seg0[2] <= deco7seg_hexa:deco0.port1
+seg0[3] <= deco7seg_hexa:deco0.port1
+seg0[4] <= deco7seg_hexa:deco0.port1
+seg0[5] <= deco7seg_hexa:deco0.port1
+seg0[6] <= deco7seg_hexa:deco0.port1
+
+
+|main|cntdiv_n:cntDiv
+clk => clkdiv~reg0.CLK
+clk => rCounter[0].CLK
+clk => rCounter[1].CLK
+clk => rCounter[2].CLK
+clk => rCounter[3].CLK
+clk => rCounter[4].CLK
+clk => rCounter[5].CLK
+clk => rCounter[6].CLK
+clk => rCounter[7].CLK
+clk => rCounter[8].CLK
+clk => rCounter[9].CLK
+clk => rCounter[10].CLK
+clk => rCounter[11].CLK
+clk => rCounter[12].CLK
+clk => rCounter[13].CLK
+clk => rCounter[14].CLK
+clk => rCounter[15].CLK
+clk => rCounter[16].CLK
+clk => rCounter[17].CLK
+clk => rCounter[18].CLK
+clk => rCounter[19].CLK
+clk => rCounter[20].CLK
+clk => rCounter[21].CLK
+clk => rCounter[22].CLK
+clk => rCounter[23].CLK
+clk => rCounter[24].CLK
+rst => clkdiv~reg0.ACLR
+rst => rCounter[0].ACLR
+rst => rCounter[1].ACLR
+rst => rCounter[2].ACLR
+rst => rCounter[3].ACLR
+rst => rCounter[4].ACLR
+rst => rCounter[5].ACLR
+rst => rCounter[6].ACLR
+rst => rCounter[7].ACLR
+rst => rCounter[8].ACLR
+rst => rCounter[9].ACLR
+rst => rCounter[10].ACLR
+rst => rCounter[11].ACLR
+rst => rCounter[12].ACLR
+rst => rCounter[13].ACLR
+rst => rCounter[14].ACLR
+rst => rCounter[15].ACLR
+rst => rCounter[16].ACLR
+rst => rCounter[17].ACLR
+rst => rCounter[18].ACLR
+rst => rCounter[19].ACLR
+rst => rCounter[20].ACLR
+rst => rCounter[21].ACLR
+rst => rCounter[22].ACLR
+rst => rCounter[23].ACLR
+rst => rCounter[24].ACLR
+clkdiv <= clkdiv~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|deco7seg_hexa:deco1
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+SEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|deco7seg_hexa:deco0
+D[0] => Decoder0.IN3
+D[1] => Decoder0.IN2
+D[2] => Decoder0.IN1
+D[3] => Decoder0.IN0
+SEG[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+SEG[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+SEG[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+SEG[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+SEG[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+SEG[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+SEG[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
