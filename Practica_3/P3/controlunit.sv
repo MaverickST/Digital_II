@@ -20,18 +20,15 @@ module controlunit (clk, reset, loaddata, inputdata_ready);
 	
 	// Process (Combinational): update nextState
 	always_comb begin
+	nextState = currentState;
 		case (currentState)
 			S0:	
 				if(inputdata_ready)
 					nextState = S1;
-				else
-					nextState = currentState;
 			S1:	
 				if(inputdata_ready)
 					nextState = S1;
-				else
-					nextState = S0;
-			default:		
+			default:
 				nextState = S0;
 		endcase
 	end
