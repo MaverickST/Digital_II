@@ -1,0 +1,70 @@
+# Reading pref.tcl
+# do ALU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:49 on Sep 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 21:38:49 on Sep 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:49 on Sep 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv 
+# -- Compiling module main
+# -- Compiling module tb_main
+# 
+# Top level modules:
+# 	tb_main
+# End time: 21:38:49 on Sep 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:49 on Sep 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 21:38:49 on Sep 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:38:49 on Sep 08,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv 
+# -- Compiling module deco7seg_hexa
+# 
+# Top level modules:
+# 	deco7seg_hexa
+# End time: 21:38:49 on Sep 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb_main
+# vsim work.tb_main 
+# Start time: 21:39:13 on Sep 08,2023
+# Loading sv_std.std
+# Loading work.tb_main
+# Loading work.main
+# Loading work.alu
+# Loading work.pulse
+# Loading work.deco7seg_hexa
+add wave -position insertpoint sim:/tb_main/*
+run -all
+# ** Note: $stop    : C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv(167)
+#    Time: 5120 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv line 167
+# End time: 00:09:33 on Sep 09,2023, Elapsed time: 2:30:20
+# Errors: 0, Warnings: 0

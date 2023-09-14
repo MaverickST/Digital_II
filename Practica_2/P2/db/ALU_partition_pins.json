@@ -132,15 +132,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "nreset",
+					"strict" : false
+				},
+				{
 					"name" : "nOperSel",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "nreset",
 					"strict" : false
 				}
 			]

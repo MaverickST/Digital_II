@@ -9,11 +9,11 @@
 # vmap altera_ver ./verilog_libs/altera_ver
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap altera_ver ./verilog_libs/altera_ver 
-# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:06 on Sep 01,2023
+# Start time: 23:24:10 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 20:59:08 on Sep 01,2023, Elapsed time: 0:00:02
+# End time: 23:24:12 on Sep 02,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:09 on Sep 01,2023
+# Start time: 23:24:12 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 20:59:10 on Sep 01,2023, Elapsed time: 0:00:01
+# End time: 23:24:12 on Sep 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:10 on Sep 01,2023
+# Start time: 23:24:12 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 20:59:11 on Sep 01,2023, Elapsed time: 0:00:01
+# End time: 23:24:13 on Sep 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:11 on Sep 01,2023
+# Start time: 23:24:13 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 20:59:15 on Sep 01,2023, Elapsed time: 0:00:04
+# End time: 23:24:14 on Sep 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:16 on Sep 01,2023
+# Start time: 23:24:15 on Sep 02,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 20:59:18 on Sep 01,2023, Elapsed time: 0:00:02
+# End time: 23:24:16 on Sep 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/fiftyfivenm_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:19 on Sep 01,2023
+# Start time: 23:24:16 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/fiftyfivenm_atoms.v 
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFE
 # -- Compiling UDP FIFTYFIVENM_PRIM_DFFEAS
@@ -562,15 +562,15 @@
 # 	fiftyfivenm_jtag
 # 	fiftyfivenm_adcblock
 # 	fiftyfivenm_phase_detector
-# End time: 20:59:21 on Sep 01,2023, Elapsed time: 0:00:02
+# End time: 23:24:17 on Sep 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work fiftyfivenm_ver {c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:21 on Sep 01,2023
+# Start time: 23:24:17 on Sep 02,2023
 # vlog -reportprogress 300 -vlog01compat -work fiftyfivenm_ver c:/intelfpga_lite/22.1std/quartus/eda/sim_lib/mentor/fiftyfivenm_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 20:59:28 on Sep 01,2023, Elapsed time: 0:00:07
+# End time: 23:24:20 on Sep 02,2023, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -582,57 +582,61 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv}
+# vlog -sv -work work +incdir+C:/Users/Crist/OneDrive\ -\ Universidad\ de\ Antioquia/2023-2/Electr髇ica\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr髇ica Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:29 on Sep 01,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv 
+# Start time: 23:24:20 on Sep 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 20:59:29 on Sep 01,2023, Elapsed time: 0:00:00
+# End time: 23:24:20 on Sep 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv}
+# vlog -sv -work work +incdir+C:/Users/Crist/OneDrive\ -\ Universidad\ de\ Antioquia/2023-2/Electr髇ica\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr髇ica Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:29 on Sep 01,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv 
+# Start time: 23:24:20 on Sep 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv 
 # -- Compiling module main
 # -- Compiling module tb_main
 # 
 # Top level modules:
 # 	tb_main
-# End time: 20:59:29 on Sep 01,2023, Elapsed time: 0:00:00
+# End time: 23:24:20 on Sep 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv}
+# vlog -sv -work work +incdir+C:/Users/Crist/OneDrive\ -\ Universidad\ de\ Antioquia/2023-2/Electr髇ica\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr髇ica Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:29 on Sep 01,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv 
+# Start time: 23:24:20 on Sep 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv 
 # -- Compiling module pulse
 # 
 # Top level modules:
 # 	pulse
-# End time: 20:59:29 on Sep 01,2023, Elapsed time: 0:00:00
+# End time: 23:24:20 on Sep 02,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv}
+# vlog -sv -work work +incdir+C:/Users/Crist/OneDrive\ -\ Universidad\ de\ Antioquia/2023-2/Electr髇ica\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr髇ica Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:59:30 on Sep 01,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv 
+# Start time: 23:24:20 on Sep 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2" C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv 
 # -- Compiling module deco7seg_hexa
 # 
 # Top level modules:
 # 	deco7seg_hexa
-# End time: 20:59:30 on Sep 01,2023, Elapsed time: 0:00:00
+# End time: 23:24:21 on Sep 02,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 vsim work.tb_main
 # vsim work.tb_main 
-# Start time: 20:59:36 on Sep 01,2023
+# Start time: 23:24:24 on Sep 02,2023
 # Loading sv_std.std
 # Loading work.tb_main
 # Loading work.main
 # Loading work.alu
 # Loading work.pulse
 # Loading work.deco7seg_hexa
-add wave -position insertpoint sim:/tb_main/*
-# End time: 21:00:48 on Sep 01,2023, Elapsed time: 0:01:12
+add wave -position insertpoint sim:/tb_main/mainALU/aluM/*
+run -all
+# ** Note: $stop    : C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr贸nica Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv(162)
+#    Time: 5120 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electr髇ica Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv line 162
+# End time: 23:38:56 on Sep 02,2023, Elapsed time: 0:14:32
 # Errors: 0, Warnings: 0

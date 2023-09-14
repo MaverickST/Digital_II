@@ -17,7 +17,7 @@ module main #(fpga_f = 50_000_000, n = 5)
 	logic OperSel;
 	assign OperSel = ~nOperSel;
 	
-	logic [1:0] ALUControl = 2'b00; /* Controlar qué peración realizar */
+	logic [1:0] ALUControl = 2'b11; /* Controlar qué peración realizar */
 	alu #(n) aluM (A, B, ALUControl, flags, outALU);
 	logic pulse;
 	
@@ -25,14 +25,13 @@ module main #(fpga_f = 50_000_000, n = 5)
 	pulse genPulse (OperSel, clk, reset, pulse);
 	
 	/* Control del tipo de operación */
-	always_ff @(posedge pulse) begin 
-		ALUControl <= ALUControl + 1;
-		case (ALUControl)
-			2'b00: currentOp <= 4'b1000;
-			2'b01: currentOp <= 4'b0100;
-			2'b10: currentOp <= 4'b0010;
-			2'b11: currentOp <= 4'b0001;
-		endcase
+	always_ff @(posedge pulse, posedge reset) begin 
+		if(reset) begin
+			ALUControl <= 0;
+		end else begin
+			ALUControl <= ALUControl + 1;
+		end
+		
 	end
 	
 	/* Asignación de la salida de la ALU a los 7 segmentos */
@@ -58,6 +57,14 @@ module main #(fpga_f = 50_000_000, n = 5)
 			units0 = resultOp%10;
 			
 		end 
+		
+		case (ALUControl)
+			2'b00: currentOp <= 4'b1000;
+			2'b01: currentOp <= 4'b0100;
+			2'b10: currentOp <= 4'b0010;
+			2'b11: currentOp <= 4'b0001;
+		endcase
+		
 	end
 	
 	
@@ -82,15 +89,80 @@ module tb_main();
 	initial begin
 		clk = 0;
 		nreset = 0;
-		A = 10;
-		B = 2;
+		A = 15;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 15;
+		B = 1;
 		nOperSel = 0;
-		#(CLK_P*1);
+		#(CLK_P*4);
+		nreset = 1;
+		A = 20;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*4);
 		nreset = 1;
 		A = 10;
+		B = 28;
+		nOperSel = 0;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 3;
+		B = 2;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 3;
 		B = 2;
 		nOperSel = 0;
-		#(CLK_P*512);
+		#(CLK_P*4);
+		nreset = 1;
+		A = 3;
+		B = 2;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 0;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 0;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 0;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 0;
+		#(CLK_P*4);
+		nreset = 1;
+		A = 1;
+		B = 7;
+		nOperSel = 1;
+		#(CLK_P*200);
 		
 		$stop;
 		
