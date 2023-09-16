@@ -7,12 +7,9 @@ module multiplierunit (dataA, dataB, dataR);
 
 	// Internal signals to perform the multiplication
 	// WRITE HERE YOUR CODE
-	logic [22:0] fraccA;
-	logic [22:0] fraccB;
-	logic [7:0] expA;
-	logic [7:0] expB;
-	logic [23:0] mantissaA;
-	logic [23:0] mantissaB;
+	logic [22:0] fraccA, fraccB;
+	logic [7:0] expA, expB;
+	logic [23:0] mantissaA, mantissaB;
 	
 	logic singR;
 	logic [7:0] expR;
@@ -36,7 +33,7 @@ module multiplierunit (dataA, dataB, dataR);
 	
 	always_comb begin 
 		fraccR = resultProduct[45:23];
-		if ((dataA[30:0] == 0 & expB[]) | )
+		//if ((dataA[30:0] == 0 & expB[]) | )
 			
 	end 
 	
