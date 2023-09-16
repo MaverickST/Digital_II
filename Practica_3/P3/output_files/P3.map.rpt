@@ -1,5 +1,5 @@
 Analysis & Synthesis report for P3
-Fri Sep 15 21:20:19 2023
+Sat Sep 16 10:06:43 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -11,6 +11,7 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
   5. Analysis & Synthesis Messages
+  6. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -37,10 +38,10 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Sep 15 21:20:19 2023              ;
+; Analysis & Synthesis Status        ; Failed - Sat Sep 16 10:06:42 2023              ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; P3                                             ;
-; Top-level Entity Name              ; peripherals                                    ;
+; Top-level Entity Name              ; multiplierunit                                 ;
 ; Family                             ; MAX 10                                         ;
 ; Total logic elements               ; N/A until Partition Merge                      ;
 ;     Total combinational functions  ; N/A until Partition Merge                      ;
@@ -62,7 +63,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; peripherals        ; P3                 ;
+; Top-level entity name                                            ; multiplierunit     ; P3                 ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -148,7 +149,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -164,35 +165,47 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Fri Sep 15 21:20:10 2023
+    Info: Processing started: Sat Sep 16 10:06:32 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off P3 -c P3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file peripheral_pulse.sv
-    Info (12023): Found entity 1: peripheral_pulse File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/peripheral_pulse.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file peripheral_getoperands.sv
-    Info (12023): Found entity 1: peripheral_getoperands File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/peripheral_getoperands.sv Line: 4
+    Info (12023): Found entity 1: peripheral_pulse File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripheral_pulse.sv Line: 4
+Warning (12019): Can't analyze file -- file peripheral_getoperands.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file peripheral_deco7seg.sv
-    Info (12023): Found entity 1: peripheral_deco7seg File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/peripheral_deco7seg.sv Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file peripherals.sv
-    Info (12023): Found entity 1: peripherals File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 4
+    Info (12023): Found entity 1: peripheral_deco7seg File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripheral_deco7seg.sv Line: 4
+Error (10170): Verilog HDL syntax error at peripherals.sv(60) near text: "b";  expecting ")". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 60
+Error (10170): Verilog HDL syntax error at peripherals.sv(61) near text: "b";  expecting ")". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 61
+Error (10170): Verilog HDL syntax error at peripherals.sv(62) near text: "b";  expecting ")". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 62
+Error (10170): Verilog HDL syntax error at peripherals.sv(66) near text: "endcase";  expecting an operand. Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 66
+Error (10170): Verilog HDL syntax error at peripherals.sv(76) near text: ";";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 76
+Error (10170): Verilog HDL syntax error at peripherals.sv(80) near text: ";";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 80
+Error (10170): Verilog HDL syntax error at peripherals.sv(81) near text: ";";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 81
+Error (10170): Verilog HDL syntax error at peripherals.sv(89) near text: ")";  expecting ":", or ",". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 89
+Info (12021): Found 0 design units, including 0 entities, in source file peripherals.sv
 Info (12021): Found 2 design units, including 2 entities, in source file multiplierunit.sv
-    Info (12023): Found entity 1: multiplierunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/multiplierunit.sv Line: 4
-    Info (12023): Found entity 2: tb_multiplierunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/multiplierunit.sv Line: 49
+    Info (12023): Found entity 1: multiplierunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/multiplierunit.sv Line: 4
+    Info (12023): Found entity 2: tb_multiplierunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/multiplierunit.sv Line: 77
 Info (12021): Found 2 design units, including 2 entities, in source file main.sv
-    Info (12023): Found entity 1: main File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/main.sv Line: 4
-    Info (12023): Found entity 2: tb_mainunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/main.sv Line: 27
+    Info (12023): Found entity 1: main File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/main.sv Line: 4
+    Info (12023): Found entity 2: tb_mainunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/main.sv Line: 27
 Info (12021): Found 2 design units, including 2 entities, in source file datapathunit.sv
-    Info (12023): Found entity 1: datapathunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/datapathunit.sv Line: 4
-    Info (12023): Found entity 2: tb_datapathunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/datapathunit.sv Line: 23
+    Info (12023): Found entity 1: datapathunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/datapathunit.sv Line: 4
+    Info (12023): Found entity 2: tb_datapathunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/datapathunit.sv Line: 23
 Info (12021): Found 2 design units, including 2 entities, in source file controlunit.sv
-    Info (12023): Found entity 1: controlunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/controlunit.sv Line: 4
-    Info (12023): Found entity 2: tb_controlunit File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/controlunit.sv Line: 47
-Error (10161): Verilog HDL error at multiplierunit.sv(41): object "AxpB" is not declared. Verify the object name is correct. If the name is correct, declare the object. File: C:/Users/Crist/OneDrive - Universidad de Antioquia/2023-2/Electrónica Digital II/Laboratorio/Digital_II/Practica_3/P3/multiplierunit.sv Line: 41
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4718 megabytes
-    Error: Processing ended: Fri Sep 15 21:20:19 2023
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:13
+    Info (12023): Found entity 1: controlunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/controlunit.sv Line: 4
+    Info (12023): Found entity 2: tb_controlunit File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/controlunit.sv Line: 47
+Info (144001): Generated suppressed messages file C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/output_files/P3.map.smsg
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 2 warnings
+    Error: Peak virtual memory: 4714 megabytes
+    Error: Processing ended: Sat Sep 16 10:06:43 2023
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:20
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/output_files/P3.map.smsg.
 
 

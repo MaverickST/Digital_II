@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at peripherals.sv(25): always construct contains both blocking and non-blocking assignments File: C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_3/P3/peripherals.sv Line: 25

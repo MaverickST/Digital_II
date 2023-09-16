@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY peripherals
+set_global_assignment -name TOP_LEVEL_ENTITY multiplierunit
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:02:45  SEPTEMBER 07, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
@@ -55,7 +55,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name SYSTEMVERILOG_FILE peripheral_pulse.sv
-set_global_assignment -name SYSTEMVERILOG_FILE peripheral_getoperands.sv
 set_global_assignment -name SYSTEMVERILOG_FILE peripheral_deco7seg.sv
 set_global_assignment -name SYSTEMVERILOG_FILE peripherals.sv
 set_global_assignment -name SYSTEMVERILOG_FILE multiplierunit.sv

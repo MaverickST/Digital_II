@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sat Sep 16 10:17:50 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : ALU
+Top-level Entity Name : multiplierunit
+Family : MAX 10
+Total logic elements : 150
+    Total combinational functions : 150
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 96
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 7
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

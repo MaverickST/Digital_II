@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Fri Sep 15 21:20:19 2023
+Analysis & Synthesis Status : Failed - Sat Sep 16 10:06:42 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : P3
-Top-level Entity Name : peripherals
+Top-level Entity Name : multiplierunit
 Family : MAX 10
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

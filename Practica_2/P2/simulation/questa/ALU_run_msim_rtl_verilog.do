@@ -5,8 +5,5 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/alu.sv}
-vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/main.sv}
-vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/pulse.sv}
-vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/deco7seg.sv}
+vlog -sv -work work +incdir+C:/Users/johan/OneDrive\ -\ Universidad\ de\ Antioquia/Semestre\ VI/Elec.\ Digital\ II/Laboratorio/Digital_II/Practica_2/P2 {C:/Users/johan/OneDrive - Universidad de Antioquia/Semestre VI/Elec. Digital II/Laboratorio/Digital_II/Practica_2/P2/multiplierunit.sv}
 
