@@ -40,10 +40,10 @@ module peripherals (clk, reset, enter, inputdata,
 			end else if (loaddata == 1) begin
 
 				if(array_position[2] == 0) begin
-					dataA = dataA >> 8;					
+					dataA = dataA >> 8;
 					dataA[31:24] = inputdata;
 				end else begin
-					dataB = dataB << 8;
+					dataB = dataB >> 8;
 					dataB[31:24] = inputdata;
 				end
 
